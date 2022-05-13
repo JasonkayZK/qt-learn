@@ -1,3 +1,3 @@
-# **Qt Learn**
+# **Mine Sweeper**
 
-A project to learn Qt in C++.
+Mine-Sweeper game written in C++. 
