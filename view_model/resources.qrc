@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefox="../">
+        <file>resources/blocks.bmp</file>
+        <file>resources/faces.bmp</file>
+        <file>resources/frame.bmp</file>
+        <file>resources/timenumber.bmp</file>
+    </qresource>
+</RCC>
