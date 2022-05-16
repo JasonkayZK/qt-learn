@@ -13,7 +13,7 @@
 #include <QMouseEvent>
 #include <QTimer>
 #include <QMessageBox>
-
+#include <QDebug>
 
 // ---------全局变量------------ //
 const int blockSize = 20;
