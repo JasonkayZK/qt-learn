@@ -20,7 +20,7 @@ elseif (CMAKE_HOST_UNIX)
 endif ()
 
 if (MACOS)
-    set(CMAKE_PREFIX_PATH "/opt/homebrew/lib")
+    set(CMAKE_PREFIX_PATH "/Users/zk/Qt/6.6.1/macos/lib/cmake")
     find_package(Qt6 COMPONENTS
             Core
             Gui
