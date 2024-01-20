@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(mine-sweeper)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -20,7 +21,7 @@ elseif (CMAKE_HOST_UNIX)
 endif ()
 
 if (MACOS)
-    set(CMAKE_PREFIX_PATH "/opt/homebrew/lib")
+    set(CMAKE_PREFIX_PATH "/Users/zk/Qt/6.6.1/macos/lib/cmake")
     find_package(Qt6 COMPONENTS
             Core
             Gui

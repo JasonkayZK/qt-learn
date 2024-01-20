@@ -68,6 +68,6 @@
         </action>
     </widget>
     <layoutdefault spacing="6" margin="11"/>
-    <resources />
+    <resources/>
     <connections/>
 </ui>

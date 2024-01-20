@@ -7,21 +7,21 @@
 
 // Game status
 enum GameState {
-    // not finish
-    PLAYING,
-    // wrong mark
-    FAULT,
-    // lose
-    OVER,
-    // win
-    WIN
+  // not finish
+  PLAYING,
+  // wrong mark
+  FAULT,
+  // lose
+  OVER,
+  // win
+  WIN
 };
 
 // Game level
 enum GameLevel {
-    BASIC,
-    MEDIUM,
-    HARD
+  BASIC,
+  MEDIUM,
+  HARD
 };
 
 // Default param for MineSweeper game
