@@ -15,6 +15,11 @@ Win10:
 -   Qt 5
 
 
+## **Resource**
+
+- [《最新QT从入门到实战完整版|传智教育》](https://www.bilibili.com/video/BV1g4411H78N/)
+
+
 
 ## **Project**
 

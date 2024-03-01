@@ -35,9 +35,4 @@ elseif (WINDOWS)
             REQUIRED)
 endif ()
 
-add_executable(main main.cc)
-target_link_libraries(main
-        ${QT_PREFIX}::Core
-        ${QT_PREFIX}::Gui
-        ${QT_PREFIX}::Widgets
-        )
+add_subdirectory(day0)
