@@ -1,5 +1,4 @@
 #include <QApplication> /// 包含一个应用程序类的头文件
-#include <QPushButton>
 #include "MyWidget.h"
 
 /// main程序入口  argc命令行变量的数量  argv命令行变量的数组

@@ -49,6 +49,7 @@ MyWidget::MyWidget(QWidget *parent) : QWidget(parent) {
   connect(myBtn, &QPushButton::clicked, this, &QWidget::close);
 }
 
+/// 打印的时候还没有释放对象！
 MyWidget::~MyWidget() {
   qDebug() << "MyWidget destructor";
 }
