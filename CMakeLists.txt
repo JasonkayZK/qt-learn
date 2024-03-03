@@ -30,3 +30,4 @@ find_package(${QT_PREFIX} COMPONENTS
 
 add_subdirectory(day0)
 add_subdirectory(day1)
+add_subdirectory(day2)
