@@ -3,3 +3,4 @@ project(day2)
 
 add_subdirectory(01_QMainWindow)
 add_subdirectory(02_QtSource)
+add_subdirectory(03_QDialog)
