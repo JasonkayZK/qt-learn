@@ -1,4 +1,4 @@
-project(day2_code)
+project(day2_01_q_main_window)
 
 add_executable(day2_01_q_main_window
         main.cc
