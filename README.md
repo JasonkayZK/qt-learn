@@ -6,14 +6,9 @@ A project to learn Qt in C++.
 
 ## **Environment**
 
-MacOS：
-
--   Qt 6
-
-Win10:
-
--   Qt 5
-
+- C++ 11
+- Qt 6
+- Cmake 3.22
 
 ## **Resource**
 

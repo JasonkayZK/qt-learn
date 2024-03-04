@@ -96,3 +96,5 @@ compile_commands.json
 *.iml
 out
 gen
+
+**/.DS_Store
