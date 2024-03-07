@@ -20,8 +20,9 @@ A project to learn Qt in C++.
 
 Now finished:
 
-| Project                                                      | Date       | INFO                          |
-| ------------------------------------------------------------ | ---------- | ----------------------------- |
-| [mine-sweeper](https://github.com/JasonkayZK/qt-learn/tree/proj/mine-sweeper) | 2022-05-16 | MineSweeper implemented by Qt |
-|                                                              |            |                               |
+| Project                                                      | Date       | INFO                                                    |
+| ------------------------------------------------------------ | ---------- | ------------------------------------------------------- |
+| [mine-sweeper](https://github.com/JasonkayZK/qt-learn/tree/proj/mine-sweeper) | 2022-05-16 | MineSweeper implemented by Qt                           |
+| [proj/qtmqtt](https://github.com/JasonkayZK/cpp-learn/tree/proj/qtmqtt) | 2024-03-07 | 在 Qt 项目中嵌入 [qtmqtt](https://github.com/qt/qtmqtt) |
+|                                                              |            |                                                         |
 
