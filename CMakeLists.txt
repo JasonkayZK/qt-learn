@@ -26,6 +26,7 @@ find_package(${QT_PREFIX} COMPONENTS
         Core
         Gui
         Widgets
+        Multimedia
         REQUIRED)
 
 add_subdirectory(day0)

@@ -8,6 +8,7 @@
 #include <QMainWindow>
 #include "play_scene.h"
 
+/// 选择关卡类
 class ChooseLevelScene : public QMainWindow {
  Q_OBJECT
 

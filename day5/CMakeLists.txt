@@ -10,10 +10,13 @@ add_executable(FlipCoin
         chooselevelscene.cc
         play_scene.cc
         config.cc
+        dataconfig.cc
+        my_coin.cc
 )
 
 target_link_libraries(FlipCoin
         ${QT_PREFIX}::Core
         ${QT_PREFIX}::Gui
         ${QT_PREFIX}::Widgets
+        ${QT_PREFIX}::Multimedia
 )

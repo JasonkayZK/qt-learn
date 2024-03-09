@@ -13,6 +13,7 @@
 #include <QDebug>
 #include <QTimer>
 #include <QLabel>
+#include <QSoundEffect>
 
 ChooseLevelScene::ChooseLevelScene(QWidget *parent) : QMainWindow(parent) {
   /// 配置选择关卡场景
@@ -33,6 +34,12 @@ ChooseLevelScene::ChooseLevelScene(QWidget *parent) : QMainWindow(parent) {
     this->close();
   });
 
+  /// 选择关卡按钮音效
+  auto *chooseSound = new QSoundEffect(this);
+  chooseSound->setSource(QUrl::fromLocalFile(":/res/TapButtonSound.wav"));
+  auto *backSound = new QSoundEffect(this);
+  backSound->setSource(QUrl::fromLocalFile(":/res/TapButtonSound.wav"));
+
   /// 返回按钮
   auto *backBtn = new MyPushButton(":/res/BackButton.png", ":/res/BackButtonSelected.png");
   backBtn->setParent(this);
@@ -41,6 +48,7 @@ ChooseLevelScene::ChooseLevelScene(QWidget *parent) : QMainWindow(parent) {
   /// 点击返回
   connect(backBtn, &MyPushButton::clicked, [=]() {
     qDebug() << "点击了返回按钮";
+    backSound->play();
     /// 告诉主场景 我返回了，主场景监听ChooseLevelScene的返回按钮
     //延时返回
     QTimer::singleShot(500, this, [=]() {
@@ -58,13 +66,20 @@ ChooseLevelScene::ChooseLevelScene(QWidget *parent) : QMainWindow(parent) {
     connect(menuBtn, &MyPushButton::clicked, [=]() {
       QString str = QString("您选择的是第 %1 关 ").arg(i + 1);
       qDebug() << str;
+      chooseSound->play();
 
       /// 进入到游戏场景
       this->hide(); // 将选关场景隐藏掉
       play = new PlayScene(i + 1); // 创建游戏场景
-      play->show(); // 显示游戏场景
+      ///  设置固定窗口
+      play->setGeometry(this->geometry());
+      /// 显示游戏场景
+      play->show();
 
+      /// 游戏场景的Back按钮
       connect(play, &PlayScene::chooseSceneBack, [=]() {
+        /// 设置固定窗口
+        this->setGeometry(play->geometry());
         this->show();
         delete play;
         play = nullptr;
